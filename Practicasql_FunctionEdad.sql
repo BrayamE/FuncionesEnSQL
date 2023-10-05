@@ -101,7 +101,7 @@ CREATE FUNCTION ObtenerNombresApellidos()
 RETURNS TABLE
 AS
 RETURN
-    SELECT UPPER(Nombre) AS Nombre, CONCAT(ApellidoPaterno, ', ', ApellidoMaterno) AS Apellidos
+    SELECT UPPER(Nombre) AS Nombre, CONCAT(ApellidoPaterno, '  ', ApellidoMaterno) AS Apellidos
     FROM Personas;
 
 
